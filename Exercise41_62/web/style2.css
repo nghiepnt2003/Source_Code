@@ -1,0 +1,21 @@
+
+h3 {
+    margin : 8px 0px;
+    
+    
+}
+.color-format {
+    color: rgb(69, 135, 138);
+}
+label{
+    min-width: 80px;
+    display: inline-block;
+    font-size: 16px;
+}
+input {
+    font-size: 16px;
+}
+.btn {
+    padding : 4px 8px;
+}
+

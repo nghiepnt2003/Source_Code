@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Murach's Java Servlets and JSP</title>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <img src="https://www.southeastlinuxfest.org/wp-content/uploads/2014/06/Murach_image-300x300.jpg" alt="Logo Murach" width="200" height="150">
+        <form action="survey" method="post">
+            <h1>Survey</h1>
+            <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+            <h2>Your information:</h2>
+            
+            <input type="hidden" name="action" value="add">        
+
+            <label class="pad_top">First Name</label>
+            <input type="text" name="firstName" required><br>
+            <label class="pad_top">Last Name</label>
+            <input type="text" name="lastName" required><br>
+            <label class="pad_top">Email</label>
+            <input type="email" name="email" required><br>
+            <label class="pad_top">Date of Birth</label>
+            <input type="date" name="birthday" required><br>
+            
+            <h2>How did you hear about us?</h2>
+            <p><input type=radio name="heardFrom"  value="Search Engine" required>Search engine
+               <input type=radio name="heardFrom"  value="Friend" required>Word of mouth
+               <input type=radio name="heardFrom"  value="Social Media" required> Social Media
+               <input type=radio name="heardFrom"  value="Other" required>Other</p>
+
+            <h2>Would you like to receive announcements about new CDs and special offers?</h2>
+            <p><input type="checkbox" name="like" value = "YES, I'd like that.">YES, I'd like that.</p>
+            <p><input  type="checkbox" name="wantsUpdates" value="YES, please send me email announcements"> YES, please send me email announcements</p>
+            <p>Please contact me by:
+                <select name="contactVia">
+                    <option value="Both" selected>Email or postal mail</option>
+                    <option value="Email">Email only</option>
+                    <option value="Postal Mail">Postal mail only</option>
+                </select>
+            </p>
+
+            <input type="submit" value="Submit">
+            <button>
+                <a class="margin_left btn-link" href="https://profile-102x.onrender.com/WebProfile">Back Home</a>
+            </button>
+        </form>
+    </body>
+</html>
